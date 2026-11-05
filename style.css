@@ -7,7 +7,7 @@ button{font:inherit}
 .container{width:min(1200px,calc(100% - 64px));margin:0 auto}
 .header{height:78px;position:sticky;top:0;z-index:30;background:rgba(255,255,255,.97);border-bottom:1px solid #e8f3fb;backdrop-filter:blur(10px)}
 .header__inner{height:100%;display:flex;align-items:center;gap:24px}
-.brand{display:inline-flex;align-items:center;gap:9px;flex:none;white-space:nowrap}
+.brand{display:inline-flex;align-items:center;gap:9px;flex:none;white-space:nowrap}.brand--image{width:174px;justify-content:flex-start}.brand__logo{display:block;width:100%;height:auto;max-height:68px;object-fit:contain;object-position:left center}
 .brand__mark{width:43px;height:43px;position:relative;display:grid;place-items:center;border-radius:10px;background:linear-gradient(145deg,#18a9f5,#0757c8);color:#fff}
 .brand__mark svg{position:absolute;width:46px;height:46px;top:-11px;left:-1px}
 .brand__mark b{position:relative;margin-top:9px;font-size:16px;font-weight:800}
@@ -26,8 +26,7 @@ button{font:inherit}
 .menu-toggle span{display:block;width:23px;height:2px;margin:5px 0;border-radius:3px;background:var(--navy)}
 .hero{overflow:hidden;background:linear-gradient(105deg,#fff 44%,#f2f9ff 100%)}
 .hero__grid{min-height:410px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:24px;padding-top:25px;padding-bottom:26px}
-.hero__content h1{margin:0 0 10px;font-size:clamp(58px,6.2vw,81px);font-weight:800;line-height:.98;letter-spacing:-.067em}
-.hero__content h1 span{color:var(--blue)}
+.hero__logo{display:block;width:min(100%,430px);height:auto;max-height:150px;object-fit:contain;object-position:left center;margin:0 0 12px}
 .hero__label{display:inline-block;padding:8px 22px;border-radius:999px;background:#cceaff;color:#073b7b;font-size:clamp(20px,2.35vw,28px);font-weight:800;letter-spacing:-.045em}
 .hero__lead{margin:16px 0 23px;font-size:clamp(17px,1.9vw,23px);font-weight:800;line-height:1.34;letter-spacing:-.035em}
 .hero__features{display:flex;align-items:center;gap:clamp(13px,2vw,25px);margin-bottom:24px}
@@ -37,11 +36,11 @@ button{font:inherit}
 .hero__button .telegram-icon{width:25px;height:25px}
 .button__arrow{margin-left:10px;font-size:23px;line-height:1}
 .hero__art{display:flex;align-items:center;justify-content:center;min-width:0}
-.study-illustration{display:block;width:100%;max-width:600px;height:auto}
+.hero__image{display:block;width:100%;max-width:510px;height:auto;aspect-ratio:1/1;object-fit:contain;border-radius:22px}
 .section{padding:50px 0}
 .section__title{margin:0;font-size:clamp(29px,3.4vw,39px);font-weight:800;line-height:1.13;letter-spacing:-.055em}
 .services{padding-top:18px;padding-bottom:34px}
-.services .section__title{margin-bottom:17px}
+.services .section__title{margin-bottom:19px;font-size:clamp(36px,4vw,48px)}
 .services__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
 .service-card{min-height:190px;padding:17px 12px 15px;border:2px solid var(--line);border-radius:22px;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease}
 .service-card:hover{transform:translateY(-6px);border-color:#91d1ff;box-shadow:0 9px 18px rgba(8,124,224,.09)}
@@ -55,34 +54,32 @@ button{font:inherit}
 .advantages__list{display:grid;gap:17px;margin:0;padding:0;list-style:none}
 .advantages__list li{display:flex;align-items:center;gap:14px;font-size:16px;font-weight:800;line-height:1.35;transition:transform .22s ease}
 .advantages__list li:hover{transform:translateY(-3px)}
-.check{display:grid;place-items:center;flex:none;width:38px;height:38px;border-radius:50%;background:linear-gradient(145deg,#25b4ff,#0862d5);color:#fff;font-size:24px;font-weight:800}
+.check{display:grid;place-items:center;align-self:center;flex:none;width:38px;height:38px;border-radius:50%;background:linear-gradient(145deg,#25b4ff,#0862d5);color:#fff;font-size:25px;font-weight:800;line-height:1;letter-spacing:-.08em;padding:0 0 3px 0}
 .workflow{background:#eef8ff}
 .workflow__list{display:grid;gap:9px;list-style:none;margin:0;padding:0}
-.workflow__list li{display:grid;grid-template-columns:37px 42px 1fr;align-items:center;gap:10px;min-height:42px;padding:2px 7px 2px 0;border-radius:13px;font-size:14px;font-weight:800;line-height:1.35;transition:transform .22s ease,background-color .22s ease}
+.workflow__list li{display:grid;grid-template-columns:38px minmax(0,1fr);align-items:center;gap:12px;min-height:42px;padding:2px 7px 2px 0;border-radius:13px;font-size:14px;font-weight:800;line-height:1.35;transition:transform .22s ease,background-color .22s ease}
 .workflow__list li:hover{transform:translateY(-3px);background:rgba(255,255,255,.68)}
-.step{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:linear-gradient(145deg,#22aafa,#075bd1);color:#fff;font-size:16px;font-weight:800}
 .workflow__icon{display:grid;place-items:center;color:var(--blue)}.workflow__icon svg{width:31px;height:31px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-.reviews{padding:47px 0;background:#f7fbff}
+.reviews{padding:38px 0;background:#fff}.reviews__panel{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:32px 38px;border:1.5px solid #c8e2ff;border-radius:28px;background:linear-gradient(110deg,#f7fbff,#edf6ff);box-shadow:0 5px 18px rgba(15,91,160,.045)}
 .reviews__inner{display:flex;align-items:center;justify-content:space-between;gap:30px}
 .reviews__inner>div:first-child{max-width:570px}
-.eyebrow{margin:0 0 9px;color:var(--blue);font-size:10px;font-weight:800;letter-spacing:.14em}
+.eyebrow{margin:0 0 9px;color:var(--blue);font-size:18px;font-weight:800;letter-spacing:.075em;line-height:1.2}
+.reviews__eyebrow{display:flex;align-items:center;gap:11px;font-size:21px;letter-spacing:.055em}
+.reviews__star{display:block;width:31px;height:31px;flex:none;fill:none;stroke:var(--blue);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 .reviews .section__title{margin-bottom:10px}
 .reviews__text{margin:0;color:var(--muted);font-size:15px;line-height:1.65}
 .reviews__actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .button--outline{border:1.5px solid var(--blue);color:var(--blue);background:#fff}
 .button--outline:hover{background:#f2f9ff;box-shadow:0 7px 16px rgba(8,124,224,.08)}
 .contacts{padding:48px 0}
-.contacts__box{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:32px 38px;border-radius:25px;background:linear-gradient(110deg,#eaf6ff,#f4faff)}
+.contacts__box{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:32px 38px;border:1px solid #d7e9fb;border-radius:28px;background:linear-gradient(110deg,#f5faff,#eaf5ff)}
 .contacts__box>div{max-width:670px}
-.contacts__box .section__title{margin-bottom:9px}
+.contacts__box .section__title{margin-bottom:5px}.contacts__eyebrow{margin:0 0 10px;font-size:15px;letter-spacing:.09em}
 .contacts__box p:last-child{margin:0;color:var(--muted);font-size:15px;line-height:1.65}
 .footer{padding:20px 0;border-top:1px solid #e5f1fb}
 .footer__inner{display:flex;align-items:center;justify-content:space-between;gap:18px;color:#657992;font-size:12px}
-.brand--footer .brand__name{color:var(--navy);font-size:19px}
-.brand--footer .brand__mark{width:36px;height:36px}
-.brand--footer .brand__mark svg{width:39px;height:39px}
-.footer__inner>a:last-child{color:var(--blue);font-weight:800;transition:transform .22s ease}
-.footer__inner>a:last-child:hover{transform:translateY(-2px)}
+.brand--footer.brand--image{width:148px}.brand--footer .brand__logo{max-height:58px}
+.footer__telegram{display:inline-flex;align-items:center;gap:10px;padding:12px 19px;border:1.5px solid #9ccaff;border-radius:999px;background:#fff;color:var(--blue);font-size:14px;font-weight:800;transition:transform .22s ease,background-color .22s ease,border-color .22s ease,box-shadow .22s ease}.footer__telegram:hover{transform:translateY(-3px);background:#f4f9ff;border-color:#5aa9f5;box-shadow:0 7px 17px rgba(8,124,224,.09)}.footer__telegram .telegram-icon{width:23px;height:23px}.footer__telegram b{font-size:18px}
 .floating-telegram{display:none}
 @media(max-width:1050px){
   .header__inner{gap:13px}.nav{gap:13px}.nav a{font-size:11px}.brand__name{font-size:19px}.header__button{font-size:11px;padding:12px 14px}
@@ -92,36 +89,36 @@ button{font:inherit}
 }
 @media(max-width:760px){
   html{scroll-padding-top:75px}.container{width:min(100% - 36px,560px)}
-  .header{height:68px}.header__inner{gap:10px}.brand__name{font-size:20px}
+  .header{height:68px}.header__inner{gap:10px}.brand--image{width:142px}.brand__logo{max-height:55px}
   .nav{display:none;position:absolute;top:68px;left:0;right:0;margin:0;padding:18px 22px 22px;background:#fff;border-bottom:1px solid #e7f2fb;box-shadow:0 12px 20px rgba(7,27,61,.08);flex-direction:column;align-items:flex-start;gap:17px}
   .nav.is-open{display:flex}.nav a{font-size:14px}
   .header__button{margin-left:auto;padding:10px 13px;font-size:0;gap:0}.header__button .telegram-icon{width:22px;height:22px}
   .menu-toggle{display:block}
   .hero__grid{grid-template-columns:1fr;gap:0;padding-top:35px;padding-bottom:22px}
-  .hero__content h1{font-size:clamp(56px,13vw,75px)}
+  .hero__logo{width:min(100%,390px);max-height:130px;margin-bottom:14px}
   .hero__label{font-size:clamp(18px,5vw,24px);padding:8px 17px}
   .hero__lead{font-size:18px}
   .hero__features{justify-content:space-between;gap:6px}
   .feature{gap:5px;font-size:10px}.feature svg{width:29px;height:29px}
   .hero__button{width:100%;min-width:0;font-size:16px}
-  .hero__art{max-width:470px;margin:10px auto 0}.study-illustration{max-height:285px}
+  .hero__art{max-width:430px;margin:10px auto 0}.hero__image{max-height:390px}
   .section{padding:39px 0}.services{padding-top:18px;padding-bottom:32px}
   .services__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
   .service-card{min-height:170px;border-radius:18px}.service-card h3{font-size:16px}.service-card svg{width:43px;height:43px}.price{min-width:0;padding:8px 17px;font-size:14px}
   .details{padding-top:0;padding-bottom:38px}.details__grid{grid-template-columns:1fr;gap:13px}
-  .panel{padding:22px 19px;border-radius:21px}.panel .section__title{font-size:27px;margin-bottom:19px}
+  .panel{padding:22px 19px;border-radius:21px}.panel .section__title{font-size:27px;margin-bottom:19px}.services .section__title{font-size:36px}.eyebrow{font-size:16px}
   .advantages__list{gap:13px}.advantages__list li{font-size:14px}
-  .workflow__list{gap:8px}.workflow__list li{grid-template-columns:34px 33px 1fr;gap:8px;font-size:12px}
-  .step{width:32px;height:32px;font-size:14px}.workflow__icon{font-size:23px}
-  .reviews__inner{display:block}.reviews__actions{margin-top:20px}
+  .workflow__list{gap:8px}.workflow__list li{grid-template-columns:34px minmax(0,1fr);gap:9px;font-size:12px}
+  .workflow__icon{font-size:23px}
+  .reviews__inner{display:block}.reviews__panel{padding:26px 21px;border-radius:21px}.reviews__actions{margin-top:20px}
   .contacts{padding:38px 0}.contacts__box{display:block;padding:26px 21px;border-radius:21px}
-  .contacts__box .section__title{font-size:28px}.contacts__box .button{width:100%;margin-top:19px;font-size:13px}
-  .footer__inner{flex-wrap:wrap}.footer__inner .brand{width:100%}
+  .contacts__box .section__title{font-size:28px}.contacts__eyebrow{font-size:14px}.contacts__box .button{width:100%;margin-top:19px;font-size:13px}
+  .footer__inner{flex-wrap:wrap}.footer__inner .brand{width:100%}.footer__telegram{font-size:13px}
   .floating-telegram{position:fixed;right:16px;bottom:16px;z-index:25;display:grid;place-items:center;width:52px;height:52px;border-radius:17px;background:linear-gradient(145deg,#159ff2,#075bd1);color:#fff;box-shadow:0 7px 17px rgba(8,124,224,.22);transition:transform .22s ease}
   .floating-telegram:hover{transform:translateY(-4px)}.floating-telegram svg{width:25px;height:25px}
 }
 @media(max-width:390px){
-  .brand__name{font-size:18px}.hero__features{gap:3px}.feature{font-size:9px}.feature svg{width:26px;height:26px}
+  .brand--image{width:132px}.hero__features{gap:3px}.feature{font-size:9px}.feature svg{width:26px;height:26px}
   .workflow__list li{font-size:11px}.reviews__actions .button{width:100%}
 }
 @media(prefers-reduced-motion:reduce){

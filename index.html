@@ -14,12 +14,8 @@
 <body>
 <header class="header">
   <div class="container header__inner">
-    <a class="brand" href="#top" aria-label="BK STUDY — главная">
-      <span class="brand__mark" aria-hidden="true">
-        <svg viewBox="0 0 64 64"><path d="M4 19 32 5l28 14-28 14L4 19Z" fill="currentColor"/><path d="M14 26v15c10 8 26 8 36 0V26L32 37 14 26Z" fill="#087ce0"/><path d="M57 21v18" stroke="#0753a5" stroke-width="3" stroke-linecap="round"/><circle cx="57" cy="41" r="3" fill="#0753a5"/></svg>
-        <b>BK</b>
-      </span>
-      <span class="brand__name">BK STUDY</span>
+    <a class="brand brand--image" href="#top" aria-label="BK STUDY — главная">
+      <img class="brand__logo" src="assets/bk-study-logo.png" alt="BK STUDY">
     </a>
 
     <nav class="nav" id="main-nav" aria-label="Основная навигация">
@@ -44,7 +40,7 @@
   <section class="hero">
     <div class="container hero__grid">
       <div class="hero__content">
-        <h1><span>BK</span> STUDY</h1>
+        <img class="hero__logo" src="assets/bk-study-logo.png" alt="BK STUDY">
         <div class="hero__label">Портал помощи студентам</div>
         <p class="hero__lead">Качественно, в срок и по требованиям<br class="desktop-only"> вашего учебного заведения</p>
 
@@ -58,7 +54,7 @@
             <b>Соблюдение<br>сроков</b>
           </div>
           <div class="feature">
-            <svg viewBox="0 0 40 40" aria-hidden="true"><ellipse cx="20" cy="10" rx="12" ry="5"/><path d="M8 10v7c0 3 5 5 12 5s12-2 12-5v-7M8 18v7c0 3 5 5 12 5 3 0 6-.5 8-2M8 26v4c0 3 5 5 12 5"/></svg>
+            <svg viewBox="0 0 40 40" aria-hidden="true"><ellipse cx="23" cy="8" rx="11" ry="4.5"/><path d="M12 8v5c0 2.5 5 4.5 11 4.5S34 16 34 13V8M12 13v5c0 2.5 5 4.5 11 4.5 4.4 0 8.1-1 10-2.5"/><ellipse cx="13" cy="25" rx="9" ry="4"/><path d="M4 25v5c0 2.2 4 4 9 4s9-1.8 9-4v-5M4 30v3c0 2.2 4 4 9 4s9-1.8 9-4v-3"/></svg>
             <b>Доступные<br>цены</b>
           </div>
         </div>
@@ -69,29 +65,9 @@
         </a>
       </div>
 
-      <div class="hero__art" role="img" aria-label="Академическая шапочка на книгах и стакан с ручками">
-        <svg class="study-illustration" viewBox="0 0 620 430" aria-hidden="true">
-          <path d="M34 266c31-101 129-158 239-157 94 1 145-58 246-21 75 27 111 93 93 177-16 73-91 112-190 112H162C69 377 10 341 34 266Z" fill="#eaf6ff"/>
-          <!-- нижняя книга -->
-          <path d="M112 276h337c20 0 34 10 34 25v43H139c-21 0-34-10-34-25v-24c0-10 3-16 7-19Z" fill="#8bcaff" stroke="#0753a5" stroke-width="5" stroke-linejoin="round"/>
-          <path d="M139 344h344v34H146c-21 0-34-10-34-24v-10" fill="#fafdff" stroke="#0753a5" stroke-width="5" stroke-linejoin="round"/>
-          <path d="M145 354h315M145 368h315" stroke="#a6d7f7" stroke-width="4"/>
-          <!-- верхняя книга -->
-          <path d="M91 220h350c20 0 34 10 34 25v35H122c-21 0-34-10-34-25v-21c0-7 1-11 3-14Z" fill="#dff2ff" stroke="#0753a5" stroke-width="5" stroke-linejoin="round"/>
-          <path d="M122 280h353v35H130c-21 0-34-10-34-24v-11" fill="#fff" stroke="#0753a5" stroke-width="5" stroke-linejoin="round"/>
-          <path d="M130 292h322M130 305h322" stroke="#a6d7f7" stroke-width="4"/>
-          <!-- академическая шапочка -->
-          <path d="m77 145 241-92 241 92-241 96-241-96Z" fill="#1479d7" stroke="#063b7b" stroke-width="7" stroke-linejoin="round"/>
-          <path d="M158 175v66c71 51 177 51 247 0v-66l-123 49-124-49Z" fill="#0753a5" stroke="#063b7b" stroke-width="7" stroke-linejoin="round"/>
-          <path d="M559 147v91" stroke="#087ce0" stroke-width="7" stroke-linecap="round"/>
-          <circle cx="559" cy="245" r="9" fill="#f7c95c" stroke="#0753a5" stroke-width="3"/>
-          <path d="M551 251h16l8 56c-8 11-24 11-32 0l8-56Z" fill="#f5d47a" stroke="#0753a5" stroke-width="4" stroke-linejoin="round"/>
-          <!-- стакан для ручек -->
-          <path d="M489 258h101l-10 108c-2 18-79 18-81 0l-10-108Z" fill="#eaf6ff" stroke="#0753a5" stroke-width="5"/>
-          <path d="M486 258h107c0 16-24 25-53 25s-54-9-54-25Z" fill="#bce4ff" stroke="#0753a5" stroke-width="5"/>
-          <path d="m506 258 2-80 17-9 4 89M542 258l11-103 17-8 4 111" fill="none" stroke="#087ce0" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M501 302h77M503 323h73M505 344h68" stroke="#a4d7f8" stroke-width="4"/>
-        </svg>
+      <div class="hero__art">
+        <img class="hero__image" src="assets/bk-study-hero.jpg"
+             alt="Студент в академической шапочке отдыхает рядом с ноутбуком, книгами и стопкой учебных работ">
       </div>
     </div>
   </section>
@@ -125,31 +101,34 @@
       <div class="panel advantages" id="advantages">
         <h2 class="section__title">Почему выбирают именно нас?</h2>
         <ul class="advantages__list">
-          <li><span class="check">✓</span><span>Работаем по требованиям<br class="wide-only"> вашего учебного заведения</span></li>
-          <li><span class="check">✓</span><span>Гарантия уникальности</span></li>
-          <li><span class="check">✓</span><span>Соблюдение установленных сроков</span></li>
-          <li><span class="check">✓</span><span>Индивидуальный подход<br class="wide-only"> к каждому заказу</span></li>
+          <li><span class="check" aria-hidden="true">✓</span><span>Наши специалисты — выпускники вузов и колледжей с красными дипломами</span></li>
+          <li><span class="check" aria-hidden="true">✓</span><span>Работаем по требованиям вашего учебного заведения</span></li>
+          <li><span class="check" aria-hidden="true">✓</span><span>Соблюдение установленных сроков</span></li>
+          <li><span class="check" aria-hidden="true">✓</span><span>Индивидуальный подход к каждому заказу</span></li>
         </ul>
       </div>
 
       <div class="panel workflow" id="how">
         <h2 class="section__title">Как мы работаем?</h2>
         <ol class="workflow__list">
-          <li><span class="step">1</span><span class="workflow__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 15 27 5l-7 23-5-9-11-4Z"/><path d="m15 19 12-14"/></svg></span><span>Вы пишете нам в личные сообщения.</span></li>
-          <li><span class="step">2</span><span class="workflow__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 3h11l7 7v19H8zM19 3v8h7M12 17h10M12 22h10"/></svg></span><span>Скидываете нам тему и, при наличии, методичку и свои наработки.</span></li>
-          <li><span class="step">3</span><span class="workflow__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12"/><path d="m10 16 4 4 8-9"/></svg></span><span>Подтверждаем заказ.</span></li>
-          <li><span class="step">4</span><span class="workflow__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="5" width="24" height="18" rx="2"/><path d="M2 27h28l-3-4H5l-3 4Z"/></svg></span><span>Выполняем заказ.</span></li>
-          <li><span class="step">5</span><span class="workflow__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 7h20v15H15l-7 5v-5H6z"/><path d="M11 14h.1M16 14h.1M21 14h.1"/></svg></span><span>Скидываем вам готовую работу.</span></li>
-          <li><span class="step">6</span><span class="workflow__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m16 3 4 9 9 1-7 6 2 10-8-5-8 5 2-10-7-6 9-1 4-9Z"/></svg></span><span>Вы оставляете отзыв о работе.</span></li>
+          <li><span class="workflow__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 15 27 5l-7 23-5-9-11-4Z"/><path d="m15 19 12-14"/></svg></span><span>Вы пишете нам в личные сообщения.</span></li>
+          <li><span class="workflow__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 3h11l7 7v19H8zM19 3v8h7M12 17h10M12 22h10"/></svg></span><span>Скидываете нам тему и, при наличии, методичку и свои наработки.</span></li>
+          <li><span class="workflow__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12"/><path d="m10 16 4 4 8-9"/></svg></span><span>Подтверждаем заказ.</span></li>
+          <li><span class="workflow__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="5" width="24" height="18" rx="2"/><path d="M2 27h28l-3-4H5l-3 4Z"/></svg></span><span>Выполняем заказ.</span></li>
+          <li><span class="workflow__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 7h20v15H15l-7 5v-5H6z"/><path d="M11 14h.1M16 14h.1M21 14h.1"/></svg></span><span>Скидываем вам готовую работу.</span></li>
+          <li><span class="workflow__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m16 3 4 9 9 1-7 6 2 10-8-5-8 5 2-10-7-6 9-1 4-9Z"/></svg></span><span>Вы оставляете отзыв о работе.</span></li>
         </ol>
       </div>
     </div>
   </section>
 
   <section class="section reviews" id="reviews">
-    <div class="container reviews__inner">
+    <div class="container reviews__inner panel reviews__panel">
       <div>
-        <p class="eyebrow">ОТЗЫВЫ КЛИЕНТОВ</p>
+        <p class="eyebrow reviews__eyebrow">
+          <svg class="reviews__star" viewBox="0 0 32 32" aria-hidden="true"><path d="m16 3 4 9 9 1-7 6 2 10-8-5-8 5 2-10-7-6 9-1 4-9Z"/></svg>
+          <span>ОТЗЫВЫ КЛИЕНТОВ</span>
+        </p>
         <h2 class="section__title">Убедитесь сами</h2>
         <p class="reviews__text">Посмотрите отзывы о нашей работе в Telegram. Если у вас есть вопросы или сомнения, обсудим всё лично.</p>
       </div>
@@ -166,8 +145,8 @@
   <section class="section contacts" id="contacts">
     <div class="container contacts__box">
       <div>
-        <p class="eyebrow">BK STUDY НА СВЯЗИ</p>
         <h2 class="section__title">Остались вопросы?</h2>
+        <p class="eyebrow contacts__eyebrow">BK STUDY НА СВЯЗИ</p>
         <p>Напишите нам в Telegram — обсудим вашу задачу и подберём подходящий формат работы.</p>
       </div>
       <a class="button button--telegram" href="https://t.me/BKmanager" target="_blank" rel="noopener noreferrer">
@@ -180,9 +159,9 @@
 
 <footer class="footer">
   <div class="container footer__inner">
-    <a class="brand brand--footer" href="#top"><span class="brand__mark"><b>BK</b></span><span class="brand__name">BK STUDY</span></a>
+    <a class="brand brand--footer brand--image" href="#top" aria-label="BK STUDY — главная"><img class="brand__logo" src="assets/bk-study-logo.png" alt="BK STUDY"></a>
     <span>© <span id="year"></span> BK STUDY</span>
-    <a href="https://t.me/BKstudyhelp" target="_blank" rel="noopener noreferrer">Наш Telegram-канал ↗</a>
+    <a class="footer__telegram" href="https://t.me/BKstudyhelp" target="_blank" rel="noopener noreferrer"><svg class="telegram-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m21.4 3.5-3.2 16c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.7 13.1.8 11.6c-1.1-.3-1.1-1 .2-1.5L20 2.7c.9-.3 1.7.2 1.4.8Z" fill="currentColor"/></svg><span>Наш Telegram-канал</span><b>↗</b></a>
   </div>
 </footer>
 
